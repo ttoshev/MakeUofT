@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "IoTHubMessages",
+      "direction": "in",
+      "eventHubName": "IoTHub_EventHub1",
+      "connection": "MakeUofTHub37_events_IOTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "TwilioSmsAttribute.AccountSidSetting": "ACb8fbb94b7b34d31a293bf7a7452088e0",
+      "TwilioSmsAttribute.AuthTokenSetting": "3b5b4be4dc84f0c3ddfcce9735963f3a",
+      "from": "6479315870",
+      "to":"6477187637",
+      "body": "test123",
+      "direction": "out"
+    }
+  ]
+}
